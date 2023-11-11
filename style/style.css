@@ -1,0 +1,189 @@
+:root {
+  --primary-color: #fed3a0;
+  --secondary-color: #dd7405;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section-one-left {
+  height: 480px;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.pattern-1 {
+  position: absolute;
+  height: 465.585px;
+  left: 0;
+}
+
+.elements {
+  height: 80%;
+  position: relative;
+}
+
+.logo {
+  width: 185px;
+  height: 165px;
+}
+
+.gif {
+  width: 242px;
+  height: 242px;
+}
+
+.form {
+  border-radius: 5px;
+  background: #dd7405;
+  width: 185px;
+  height: 55px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.form:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-one-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-large {
+  border-radius: 10px;
+  border: 1px solid #fae5d4;
+  width: 520px;
+}
+
+.navbar-nav {
+  gap: 20px !important;
+}
+
+.nav-link {
+  color: #000 !important;
+  font-family: Inter;
+  font-size: 13px;
+}
+
+.content-title {
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 39px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  width: 520px;
+  padding-top: 20px;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-1 {
+  position: absolute;
+  z-index: 1;
+  height: 242px;
+  top: 109px;
+  left: 118px;
+}
+
+.phone-2 {
+  position: absolute;
+  z-index: 0;
+  height: 217px;
+  top: 130px;
+  right: 160px;
+}
+
+.download {
+  display: flex;
+  padding-top: 210px;
+  gap: 12px;
+}
+
+.apple,
+.google {
+  width: 110px;
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .small {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    display: none;
+  }
+
+  .large {
+    display: none !important;
+  }
+
+  .section-one-left {
+    height: 569px;
+  }
+
+  .logo {
+    width: 110px;
+    height: 96px;
+  }
+
+  .elements {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    width: 140px;
+    height: 40px;
+  }
+
+  .pattern-1 {
+    height: 438px;
+    left: 0;
+  }
+
+  .download {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .apple,
+  .google {
+    width: 142px;
+    opacity: 0.5;
+  }
+
+  .elements {
+    height: auto;
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: rgb(0 0 0 / 0%) !important;
+  }
+
+  .navbar-small {
+    position: relative;
+  }
+}
