@@ -18,7 +18,7 @@
 
 .pattern-1 {
   position: absolute;
-  height: 465.585px;
+  height: 465px;
   left: 0;
 }
 
@@ -124,18 +124,226 @@
   cursor: pointer;
 }
 
+#home {
+  padding-top: 50px;
+  position: relative;
+}
+
+.image-section {
+  position: relative;
+}
+
+.section-2-img1 {
+  position: absolute;
+  height: 188px;
+  left: 85px;
+}
+
+.section-2-img2 {
+  position: absolute;
+  height: 219px;
+  left: 260px;
+}
+
+.section-2-img3 {
+  position: absolute;
+  height: 189px;
+  right: 0;
+  top: 80px;
+}
+
+.cat-leg {
+  position: absolute;
+  height: 36px;
+  right: 80px;
+  top: -70px;
+}
+
+.emoji-cat {
+  position: absolute;
+  height: 59px;
+  right: 70px;
+  top: 25px;
+}
+
+.flower-1 {
+  position: absolute;
+  height: 148px;
+  top: 15px;
+}
+
+.cat-leg1 {
+  position: absolute;
+  height: 39px;
+  transform: rotate(140deg);
+  left: 100px;
+}
+
+.cat-leg2 {
+  position: absolute;
+  bottom: -40px;
+  left: 190px;
+  height: 39px;
+  transform: rotate(140deg);
+}
+
+.stroke {
+  position: absolute;
+  height: 116px;
+  left: 170px;
+  bottom: -140px;
+}
+
+.section-2-title {
+  font-family: Satoshi;
+  font-size: 49px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.section-2-paragraph {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.cat-container {
+  height: 230px;
+  position: relative;
+}
+
+.cat-smile-container {
+  padding-top: 50px;
+}
+
+.cat-smile {
+  position: absolute;
+  height: 40px;
+}
+
+.love-icon-1 {
+  position: absolute;
+  height: 36px;
+  left: 300px;
+  bottom: 60px;
+}
+
+.love-icon-2 {
+  position: absolute;
+  height: 26px;
+  right: 300px;
+  top: 80px;
+}
+
+.stroke-1 {
+  position: absolute;
+  height: 39.241px;
+  bottom: 0;
+  left: 560px;
+}
+
+.cat-leg3 {
+  position: absolute;
+  right: 310px;
+  bottom: 20px;
+  height: 30px;
+  transform: rotate(140deg);
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.section-3-title {
+  color: #8b5a26;
+  font-family: Satoshi;
+  font-size: 39px;
+  font-weight: 700;
+}
+
+.pattern-2 {
+  position: absolute;
+  height: 465px;
+  left: 0;
+  top: 20px;
+}
+
+.about-container {
+  padding-right: 300px;
+  padding-top: 100px;
+}
+
+.about-div {
+  transform: rotate(-7.034deg);
+  padding: 51px 24px 24px 24px;
+  width: 440.341px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about-content {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+.cat-heart {
+  position: absolute;
+  height: 45px;
+  z-index: 1;
+  left: 520px;
+  top: 295px;
+}
+
+.about-img {
+  height: 322px;
+  position: absolute;
+  left: 730px;
+  bottom: 30px;
+  z-index: -1;
+}
+
+.pattern-3 {
+  position: absolute;
+  height: 465px;
+  right: 0;
+  top: 200px;
+  z-index: -2;
+}
+
 @media (min-width: 480px) {
-  .small {
+  .small,
+  .stroke2,
+  .flower-2,
+  .stroke3,
+  .stroke4 {
     display: none !important;
   }
 }
 
 @media (max-width: 480px) {
-  .content {
-    display: none;
-  }
-
-  .large {
+  .content,
+  .pattern-3,
+  .cat-leg,
+  .cat-leg1,
+  .cat-leg2,
+  .cat-leg3,
+  .love-icon-1,
+  .love-icon-2,
+  .flower-1,
+  .large,
+  .emoji-cat,
+  .cat-smile,
+  .about-img,
+  .stroke,
+  .stroke1 {
     display: none !important;
   }
 
@@ -185,5 +393,123 @@
 
   .navbar-small {
     position: relative;
+  }
+
+  .stroke2 {
+    height: 67px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -60px;
+  }
+
+  .section-2-title {
+    font-family: Satoshi;
+    font-size: 31px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .section-2-paragraph {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 50px;
+    text-align: justify;
+  }
+
+  .flower-2 {
+    position: absolute;
+    height: 82px;
+  }
+
+  .stroke-3 {
+    height: 51.228px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .pattern-2 {
+    height: 265px;
+  }
+
+  .cat-heart {
+    height: 30px;
+    left: 50%;
+    top: 500px;
+    transform: translate(-50%, 0);
+  }
+
+  .about-container {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .about-div {
+    transform: none;
+    padding: 51px 24px 24px 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 341px;
+  }
+
+  .section-2-img1 {
+    height: 188px;
+    top: 300px;
+    left: 55%;
+  }
+
+  .section-2-img2 {
+    height: 190px;
+    top: 300px;
+    left: 35%;
+    transform: translate(-50%, 0);
+    transform: rotate(-34deg);
+    z-index: -1;
+  }
+
+  .section-2-img3 {
+    height: 189px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 70px;
+  }
+
+  #about {
+    padding-top: 350px;
+  }
+
+  .pattern-2 {
+    left: -10px;
+    top: 200px;
+    height: 150px;
+  }
+
+  .section-3-title {
+    font-family: Satoshi;
+    font-size: 31px;
+    font-weight: 700;
+  }
+
+  .stroke3 {
+    position: absolute;
+    height: 51px;
+    top: 300px;
+  }
+
+  .about-content {
+    font-size: 13px;
+  }
+
+  .flower-2 {
+    left: 0;
+  }
+
+  .stroke4 {
+    position: absolute;
+    height: 51px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
