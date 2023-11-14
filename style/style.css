@@ -816,7 +816,7 @@
   .apple,
   .google {
     width: 142px;
-    opacity: 0.5;
+    opacity: 0.5 !important;
   }
 
   .elements {
@@ -872,9 +872,8 @@
 
   .cat-heart {
     height: 30px;
-    left: 50%;
+    left: 45%;
     top: 500px;
-    transform: translate(-50%, 0);
   }
 
   .about-container {
