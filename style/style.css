@@ -7,7 +7,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth scroll;
 }
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+.back_btn{
+  width: 25px;
+}
+
+.bottome_flower{
+  position: absolute;
+  bottom: 22px;
+  width: 136px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
 
 .main{
   height: 100vh;
@@ -69,6 +87,9 @@
   flex-direction: column;
 }
 
+.offcanvas{
+  width: 100% !important;
+}
 .navbar-large {
   border-radius: 10px;
   border: 1px solid #fae5d4;
@@ -82,7 +103,7 @@
 .nav-link {
   color: #000 !important;
   font-family: Inter;
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 .content-title {
