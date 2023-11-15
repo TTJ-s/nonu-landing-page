@@ -8,6 +8,38 @@
   margin: 0;
   padding: 0;
 }
+.off_canvas{
+  width: 100%;
+  position: fixed;
+  right: -100%;
+  top: 0px;
+  background: white;
+  z-index: 11;
+  padding: 21px;
+  max-height: 100vh;
+  height: 100vh;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.off_canvas.active{
+  right: 0;
+}
+.off_canvas .nav-link{
+  color: #000 !important;
+  font-family: Inter;
+  font-size: 15px;
+}
+.back_btn{
+  width: 24px;
+  margin-bottom: 28px;
+}
+.logo_img{
+  width: 150px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
 .main{
   height: 100vh;

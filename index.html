@@ -35,15 +35,14 @@
               <button
                 class="navbar-toggler ml-auto"
                 type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+                id="toggle_btn"
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+
+
+              <div class="off_canvas">
+                <img src="./assets/back.png" alt="" class="back_btn img-fluid">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
                     <a class="nav-link" href="/">Home</a>
@@ -61,6 +60,7 @@
                     <a class="nav-link" href="https://liveforcause.org/">LiveForCause</a>
                   </li>
                 </ul>
+                <img src="./assets/logo.png" alt="" class="logo_img">
               </div>
             </nav>
             <img src="./assets/pattern-1.png" alt="pattern" class="pattern-1 animate__animated animate__slideInLeft animate__slow" />
@@ -118,13 +118,7 @@
           <div class="col-sm-5 section-one-right">
             <nav class="navbar navbar-expand-lg navbar-light large navbar-large">
               <button
-                class="navbar-toggler"
                 type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -388,6 +382,31 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+
+
+    <script>
+      let toggle_btn = document.getElementById("toggle_btn")
+      let off_canvas = document.querySelector(".off_canvas")
+      let back_btn = document.querySelector(".back_btn")
+      let buttons = document.querySelectorAll('.off_canvas li')
+      toggle_btn.addEventListener("click", function() {
+        off_canvas.classList.add("active")
+      })
+      back_btn.addEventListener("click", function() {
+        off_canvas.classList.remove("active")
+      })
+
+      buttons.forEach((item)=>{
+        item.addEventListener("click", function () {
+          off_canvas.classList.remove("active")
+        })
+      })
+      console.log(off_canvas)
+
+    </script>
+
+
     <script>
       // This slider is for atleast 5 numbers of slides to n numbers of slides
       // you can go through by clicking left or right button or swipe left or right
