@@ -758,6 +758,13 @@
   font-style: normal;
   font-weight: 300;
   font-family: Inter;
+  text-decoration: none;
+  color: black;
+}
+
+.person:hover{
+  text-decoration: none;
+  color: black;
 }
 
 .person a{
@@ -1055,4 +1062,47 @@
     gap: 24px;    
   }
 
+}
+
+
+
+
+.head_banner{
+  height: 45vh ;
+  background-color: #fed4a0a6;
+}
+.head_banner .container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head_banner .container .head_txt{
+  font-family: Satoshi;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.privacy_policy{
+  margin-top: 80px;
+}
+.privacy_policy .heading{
+  font-family: Satoshi;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.privacy_policy .description{
+  font-family: Satoshi;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width : 400px) {
+  .head_banner .container .head_txt{
+    font-size: 28px;
+  }
+  .privacy_policy .heading{
+    font-size: 22px;
+  }
 }
